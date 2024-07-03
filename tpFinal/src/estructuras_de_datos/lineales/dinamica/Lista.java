@@ -1,5 +1,5 @@
 
-package lineales.dinamica;
+package estructuras_de_datos.lineales.dinamica;
 
 public class Lista {
 

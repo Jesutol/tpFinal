@@ -1,4 +1,4 @@
-package jerarquica.dinamica;
+package estructuras_de_datos.jerarquica.dinamica;
 
 public class NodoGen {
 	Object elem ;

@@ -1,5 +1,5 @@
-package jerarquica.dinamica;
-import lineales.dinamica.*;
+package estructuras_de_datos.jerarquica.dinamica;
+import estructuras_de_datos.lineales.dinamica.*;
 
 public class ArbolBin {
 	private NodoArbol raiz;

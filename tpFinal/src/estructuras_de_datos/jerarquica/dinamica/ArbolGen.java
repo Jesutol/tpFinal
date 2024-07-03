@@ -1,6 +1,6 @@
-package jerarquica.dinamica;
-import conjuntistas.dinamica.NodoABB;
-import lineales.dinamica.*;
+package estructuras_de_datos.jerarquica.dinamica;
+
+import estructuras_de_datos.lineales.dinamica.*;
 public class ArbolGen {
 
 	private NodoGen raiz;

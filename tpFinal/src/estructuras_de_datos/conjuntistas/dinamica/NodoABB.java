@@ -1,4 +1,4 @@
-package conjuntistas.dinamica;
+package estructuras_de_datos.conjuntistas.dinamica;
 
 public class NodoABB {
 	private	Object elem;

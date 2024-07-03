@@ -1,7 +1,7 @@
-package conjuntistas.dinamica;
+package estructuras_de_datos.conjuntistas.dinamica;
 
 
-import lineales.dinamica.Lista;
+import estructuras_de_datos.lineales.dinamica.*;
 
 public class ArbolBB {
 
