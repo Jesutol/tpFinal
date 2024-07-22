@@ -8,6 +8,7 @@ public class ResultadoPartido {
 	    private String nombreEstadio;
 	    private int golesEquipo1;
 	    private int golesEquipo2;
+	    //test
 	    
 	    
 		public ResultadoPartido(Equipo equipo1, Equipo equipo2, String ronda, Ciudad ciudadEvento, String nombreEstadio,
