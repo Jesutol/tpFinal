@@ -9,14 +9,13 @@ public class Equipo {
 	private int golesEnContra;
 
 
-	public Equipo(String nombrePais, String directorTecnico, char grupo, int puntosGanados, int golesAFavor,
-			int golesEnContra) {
+	public Equipo(String nombrePais, String directorTecnico, char grupo) {
 		this.nombrePais = nombrePais;
 		this.directorTecnico = directorTecnico;
 		this.grupo = grupo;
-		this.puntosGanados = puntosGanados;
-		this.golesAFavor = golesAFavor;
-		this.golesEnContra = golesEnContra;
+		this.puntosGanados = 0;
+		this.golesAFavor = 0;
+		this.golesEnContra = 0;
 	}
 
 
@@ -77,6 +76,14 @@ public class Equipo {
 
 	public void setGolesEnContra(int golesEnContra) {
 		this.golesEnContra = golesEnContra;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Equipo [nombrePais=" + nombrePais + ", directorTecnico=" + directorTecnico + ", grupo=" + grupo
+				+ ", puntosGanados=" + puntosGanados + ", golesAFavor=" + golesAFavor + ", golesEnContra="
+				+ golesEnContra + "]";
 	}
 
 

@@ -27,6 +27,11 @@ public class Ciudad {
 	public void setEsSede(boolean esSede) {
 		this.esSede = esSede;
 	}
+	@Override
+	public String toString() {
+		return "Ciudad [nombre=" + nombre + ", alojamientoDisponible=" + alojamientoDisponible + ", esSede=" + esSede
+				+ "]";
+	}
 
 
 
