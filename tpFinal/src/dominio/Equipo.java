@@ -1,6 +1,6 @@
 package dominio;
 
-public class Equipo {
+public class Equipo implements Comparable {
 	private String nombrePais;
 	private String directorTecnico;
 	private char grupo;
@@ -84,6 +84,13 @@ public class Equipo {
 		return "Equipo [nombrePais=" + nombrePais + ", directorTecnico=" + directorTecnico + ", grupo=" + grupo
 				+ ", puntosGanados=" + puntosGanados + ", golesAFavor=" + golesAFavor + ", golesEnContra="
 				+ golesEnContra + "]";
+	}
+
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 

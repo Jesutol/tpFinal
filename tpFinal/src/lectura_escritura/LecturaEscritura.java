@@ -1,6 +1,8 @@
 package lectura_escritura;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.StringTokenizer;
 import estructuras_de_datos.lineales.dinamica.*;
@@ -13,7 +15,8 @@ public class LecturaEscritura {
 	 public static final String rutas_path = "src/datos/Rutas.txt";
 	 public static void main(String[] args) {
 		
-		leerRutaAerea();
+		 escribirCiudad(new Ciudad("ELTIGRE", true, false));
+		
 	}
 	 
 	 
@@ -108,6 +111,44 @@ public class LecturaEscritura {
              e.printStackTrace();
          }
      }
+     
+     public static void escribirCiudad(Ciudad ciudad) {
+         try (BufferedWriter bw = new BufferedWriter(new FileWriter(ciudades_path, true))) {
+             bw.write("C:"+ciudad.getNombre() + ";" + ciudad.getAlojamientoDisponible() + ";" + ciudad.getEsSede());
+             bw.newLine();
+         } catch (IOException e) {
+             e.printStackTrace();
+         }
+     }
+
+     public static void escribirEquipo(Equipo equipo) {
+         try (BufferedWriter bw = new BufferedWriter(new FileWriter(equipos_path, true))) {
+             bw.write("E: " + equipo.getNombrePais() + ";" + equipo.getDirectorTecnico() + ";" + equipo.getGrupo());
+             bw.newLine();
+         } catch (IOException e) {
+             e.printStackTrace();
+         }
+     }
+
+     public static void escribirResultadoPartido(ResultadoPartido resultado) {
+         try (BufferedWriter bw = new BufferedWriter(new FileWriter(resultados_path, true))) {
+             bw.write("P: " + resultado.getEquipo1() + ";" + resultado.getEquipo2() + ";" + resultado.getRonda() + ";" +
+                      resultado.getCiudadEvento() + ";" + resultado.getNombreEstadio() + ";" + resultado.getGolesEquipo1() + ";" +
+                      resultado.getGolesEquipo2());
+             bw.newLine();
+         } catch (IOException e) {
+             e.printStackTrace();
+         }
+     }
+
+     public static void escribirRutaAerea(RutaAerea rutaAerea) {
+         try (BufferedWriter bw = new BufferedWriter(new FileWriter(rutas_path, true))) {
+             bw.write("R: " + rutaAerea.getCiudadOrigen() + ";" + rutaAerea.getCiudadDestino() + ";" + rutaAerea.getTiempoVuelo());
+             bw.newLine();
+         } catch (IOException e) {
+             e.printStackTrace();
+         }
  }
+}
 	
 

@@ -4,6 +4,9 @@ public class Ciudad {
 	private String nombre;
 	private boolean alojamientoDisponible;
 	private boolean esSede;
+	
+	
+	
 	public Ciudad(String nombre, boolean alojamientoDisponible, boolean esSede) {
 		this.nombre = nombre;
 		this.alojamientoDisponible = alojamientoDisponible;
@@ -15,13 +18,13 @@ public class Ciudad {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public boolean isAlojamientoDisponible() {
+	public boolean getAlojamientoDisponible() {
 		return alojamientoDisponible;
 	}
 	public void setAlojamientoDisponible(boolean alojamientoDisponible) {
 		this.alojamientoDisponible = alojamientoDisponible;
 	}
-	public boolean isEsSede() {
+	public boolean getEsSede() {
 		return esSede;
 	}
 	public void setEsSede(boolean esSede) {
