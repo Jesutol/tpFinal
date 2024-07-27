@@ -42,10 +42,10 @@ public class Sistema {
 
 				break;
 			case 5:
-				// Llamar al método correspondiente
+				
 				break;
 			case 6:
-				// Llamar al método correspondiente
+			
 				break;
 			case 7:
 				salir = true;
@@ -130,14 +130,14 @@ public class Sistema {
 	            System.out.print("Seleccione una opción: ");
 	            System.out.println();
 	            int opcion = scanner.nextInt();
-	            scanner.nextLine(); // 
+	            scanner.nextLine();  
 
 	            switch (opcion) {
 	                case 1:
-	                    // 
+	                    
 	                    break;
 	                case 2:
-	                    // 
+	                    
 	                    break;
 	                case 3:
 	                    salir = true;

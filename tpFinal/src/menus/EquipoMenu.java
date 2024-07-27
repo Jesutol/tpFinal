@@ -14,7 +14,7 @@ public class EquipoMenu {
             System.out.print("Seleccione una opción: ");
             System.out.println();
             int opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
+            scanner.nextLine(); 
 
             switch (opcion) {
                 case 1:
