@@ -32,7 +32,19 @@ public class Grafo {
 
 		return aux;
 
+		
 	}
+	public boolean existeVertice(Object buscado) {
+	    NodoVert aux = this.inicio;
+	    while (aux != null) {
+	        if (aux.getElemento().equals(buscado)) {
+	            return true;
+	        }
+	        aux = aux.getSigVertice();
+	    }
+	    return false; 
+	}
+
 
 	public boolean eliminarVert(Object elemento) {
 

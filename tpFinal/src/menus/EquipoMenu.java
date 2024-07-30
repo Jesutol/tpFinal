@@ -8,9 +8,7 @@ import estructuras_de_datos.conjuntistas.dinamica.*;
 public class EquipoMenu {
     private static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        
-    }
+    
 
     public static void mostrarMenu(AVL equipos) {
         boolean salir = false;
@@ -46,10 +44,12 @@ public class EquipoMenu {
     private static void altaEquipo(AVL equipos) {
         System.out.print("Ingrese el nombre del pais del equipo: ");
         String nombrePais = scanner.nextLine();
+        nombrePais=nombrePais.toUpperCase();
         System.out.print("Ingrese el nombre del director tecnico: ");
         String directorTecnico = scanner.nextLine();
+        directorTecnico=directorTecnico.toUpperCase();
         System.out.print("Ingrese el grupo (un solo caracter): ");
-        char grupo = scanner.nextLine().charAt(0);
+        char grupo = scanner.nextLine().toUpperCase().charAt(0);
         Equipo equipo = new Equipo(nombrePais, directorTecnico, grupo);
         if(equipos.insertar(equipo)) {
         	

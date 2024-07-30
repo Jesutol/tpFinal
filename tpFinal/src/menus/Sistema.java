@@ -90,7 +90,7 @@ public class Sistema {
 				
 				break;
 			case 3:
-				PartidoMenu.mostrarMenu(tabla, equipos);
+				PartidoMenu.mostrarMenu(tabla, equipos,mapa);
 				break;
 			case 4:
 				salir = true;

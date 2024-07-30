@@ -46,6 +46,7 @@ public class CiudadMenu {
     private static void altaCiudad(Grafo m) {
         System.out.print("Ingrese el nombre de la ciudad: ");
         String nombre = scanner.nextLine();
+       nombre= nombre.toUpperCase();
 
         boolean alojamientoDisponible = false;
         System.out.print("La ciudad tiene alojamiento disponible? (true/false): ");
@@ -77,6 +78,7 @@ public class CiudadMenu {
     private static void bajaCiudad(Grafo m) {
         System.out.print("Ingrese el nombre de la ciudad a eliminar: ");
         String nombre = scanner.nextLine();
+       nombre= nombre.toUpperCase();
         if (m.eliminarVert(nombre)) {
             LecturaEscritura.eliminarCiudad(nombre);
             System.out.println("Ciudad " + nombre + " eliminada exitosamente.");
@@ -88,8 +90,9 @@ public class CiudadMenu {
     private static void modificarCiudad(Grafo m) {
         System.out.print("Ingrese el nombre de la ciudad a modificar: ");
         String nombre = scanner.nextLine();
+       nombre= nombre.toUpperCase();
         Ciudad ciudad = (Ciudad) m.obtenerElemento(nombre);
-
+        
         if (ciudad != null) {
             System.out.println("Modificar datos de la ciudad " + nombre);
             System.out.println("1. Cambiar estado de alojamiento disponible");
