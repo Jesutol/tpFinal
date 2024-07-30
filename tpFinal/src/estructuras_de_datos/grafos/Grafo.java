@@ -329,6 +329,15 @@ public class Grafo {
 	    aux.eliminar(aux.longitud());
 	    return mejorLista;
 	}
+	
+	public Object obtenerElemento(Object nombre) {
+		NodoVert aux=ubicarVert(nombre);
+		Object elemento= aux!=null? aux.getElemento():null;
+		
+			return elemento;
+		
+		
+	}
 
 
 

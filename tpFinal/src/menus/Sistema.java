@@ -1,8 +1,16 @@
 package menus;
 
 import java.util.Scanner;
+import estructuras_de_datos.conjuntistas.dinamica.AVL;
+import estructuras_de_datos.tdaE.MultiValueHashMap;
+import estructuras_de_datos.grafos.*;
+import estructuras_de_datos.lineales.dinamica.*;
 
 public class Sistema {
+	
+	private static AVL equipos=new AVL();
+	private static  MultiValueHashMap tabla=new  MultiValueHashMap();
+	private static Grafo mapa=new Grafo();
 	private static Scanner scanner = new Scanner(System.in);
 	public static void main(String[] args) {
 		menu();
@@ -74,15 +82,15 @@ public class Sistema {
 
 			switch (opcion) {
 			case 1:
-				CiudadMenu.mostrarMenu();
+				CiudadMenu.mostrarMenu(mapa);
 				
 				break;
 			case 2:
-				EquipoMenu.mostrarMenu();
+				EquipoMenu.mostrarMenu(equipos);
 				
 				break;
 			case 3:
-				
+				PartidoMenu.mostrarMenu(tabla, equipos);
 				break;
 			case 4:
 				salir = true;
@@ -143,7 +151,7 @@ public class Sistema {
 	                    salir = true;
 	                    break;
 	                default:
-	                    System.out.println("Opción no válida. Intente de nuevo.");
+	                    System.out.println("Opcion no valida. Intente de nuevo.");
 	            }
 	        }
 	    }

@@ -552,6 +552,10 @@ public class AVL {
 
 		return hijo;
 	}
+	   public Object obtenerElemento(Object elemento) {
+	        NodoAvl nodo = buscaNodo(this.raiz, elemento);
+	        return (nodo != null) ?  nodo.getElemento() : null;
+	    }
 
 
 
