@@ -1,5 +1,7 @@
 package dominio;
 
+import java.util.Objects;
+
 public class Ciudad {
 	private String nombre;
 	private boolean alojamientoDisponible;
@@ -30,10 +32,25 @@ public class Ciudad {
 	public void setEsSede(boolean esSede) {
 		this.esSede = esSede;
 	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(nombre);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Ciudad other = (Ciudad) obj;
+		return Objects.equals(nombre, other.nombre);
+	}
 	@Override
 	public String toString() {
-		return "Ciudad [nombre=" + nombre + ", alojamientoDisponible=" + alojamientoDisponible + ", esSede=" + esSede
-				+ "]";
+		return "Ciudad: "+nombre;
 	}
 
 

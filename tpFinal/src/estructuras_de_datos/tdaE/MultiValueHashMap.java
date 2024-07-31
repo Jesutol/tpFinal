@@ -1,6 +1,8 @@
 package estructuras_de_datos.tdaE;
-import estructuras_de_datos.lineales.dinamica.*;
+
+import estructuras_de_datos.lineales.dinamica.Lista;
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 public class MultiValueHashMap<K, V> {
     private HashMap<K, Lista> map;
@@ -23,7 +25,7 @@ public class MultiValueHashMap<K, V> {
         return map.getOrDefault(key, new Lista());
     }
 
-    // Eliminar un valor específico de la lista asociada a una clave
+    // Eliminar un valor especifico de la lista asociada a una clave
     public boolean remove(K key, V value) {
         if (map.containsKey(key)) {
             Lista values = map.get(key);
@@ -49,11 +51,21 @@ public class MultiValueHashMap<K, V> {
         return map.size();
     }
 
-    // Verificar si la tabla hash está vacía
+    // Verificar si la tabla hash esta vacia
     public boolean isEmpty() {
         return map.isEmpty();
     }
 
-   
-}
+    // Metodo toString para mostrar todo el contenido del MultiValueHashMap
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Contenido de MultiValueHashMap:\n");
 
+        for (Entry<K, Lista> entry : map.entrySet()) {
+            sb.append("Clave: ").append(entry.getKey()).append(" -> Valores: ").append(entry.getValue()).append("\n");
+        }
+
+        return sb.toString();
+    }
+}

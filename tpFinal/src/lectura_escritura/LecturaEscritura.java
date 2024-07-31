@@ -1,4 +1,7 @@
 package lectura_escritura;
+import estructuras_de_datos.conjuntistas.dinamica.*;
+import estructuras_de_datos.grafos.*;
+import estructuras_de_datos.tdaE.*;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -20,20 +23,17 @@ public class LecturaEscritura {
 	public static final String resultados_path = "src/datos/Partidos.txt";
 	public static final String rutas_path = "src/datos/Rutas.txt";
 
-	public static void main(String[] args) {
-		
 	
-	}
-	public static void cargaTodosLosDatos(){
-		leerEquipos();
-		leerCiudad();
-		leerRutaAerea();
-		leerResultadoPartido();
+	public static void cargaTodosLosDatos(Grafo mapa,AVL equipos,MultiValueHashMap partidos){
+		leerEquipos(equipos);
+		leerCiudad(mapa);
+		leerRutaAerea(mapa);
+		leerResultadoPartido(partidos);
 		
 		
 	}
 
-	public static void leerCiudad() {
+	public static void leerCiudad(Grafo mapa) {
 		try (BufferedReader br = new BufferedReader(new FileReader(ciudades_path))) {
 			String linea;
 			while ((linea = br.readLine()) != null) {
@@ -44,6 +44,7 @@ public class LecturaEscritura {
 					boolean esSede = Boolean.parseBoolean(st.nextToken().trim());
 
 					Ciudad ciudad = new Ciudad(nombre, alojamientoD, esSede);
+					mapa.insertarVertice(ciudad);
 					System.out.println(ciudad.toString());
 				}
 			}
@@ -52,7 +53,7 @@ public class LecturaEscritura {
 		}
 	}
 
-	public static void leerEquipos() {
+	public static void leerEquipos(AVL equipos) {
 		try (BufferedReader br = new BufferedReader(new FileReader(equipos_path))) {
 			String linea;
 			while ((linea = br.readLine()) != null) {
@@ -65,6 +66,7 @@ public class LecturaEscritura {
 						char grupo = st.nextToken().trim().charAt(0);
 
 						Equipo equipo = new Equipo(nombrePais, directorTecnico, grupo);
+						equipos.insertar(equipo);
 						System.out.println(equipo.toString());
 					}
 				}
@@ -74,7 +76,7 @@ public class LecturaEscritura {
 		}
 	}
 
-	public static void leerResultadoPartido() {
+	public static void leerResultadoPartido(MultiValueHashMap partidos) {
 		try (BufferedReader br = new BufferedReader(new FileReader(resultados_path))) {
 			String linea;
 			while ((linea = br.readLine()) != null) {
@@ -100,7 +102,7 @@ public class LecturaEscritura {
 		}
 	}
 
-	public static void leerRutaAerea() {
+	public static void leerRutaAerea(Grafo mapa) {
 		try (BufferedReader br = new BufferedReader(new FileReader(rutas_path))) {
 			String linea;
 			while ((linea = br.readLine()) != null) {

@@ -53,7 +53,7 @@ public class Sistema {
 				
 				break;
 			case 6:
-			
+			DebugMenu.mostrarMenu(mapa, equipos, tabla);
 				break;
 			case 7:
 				salir = true;
@@ -142,10 +142,10 @@ public class Sistema {
 
 	            switch (opcion) {
 	                case 1:
-	                    
+	                    caminoMenorTiempo();
 	                    break;
 	                case 2:
-	                    
+	                    caminoMinimaCiudades();
 	                    break;
 	                case 3:
 	                    salir = true;
@@ -155,4 +155,10 @@ public class Sistema {
 	            }
 	        }
 	    }
+	 
+	 public static void caminoMenorTiempo() {
+		
+		 
+	 }
+	 public static void caminoMinimaCiudades() {}
 }

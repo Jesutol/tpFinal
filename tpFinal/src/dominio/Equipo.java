@@ -55,7 +55,7 @@ public class Equipo implements Comparable {
 
 
 	public void setPuntosGanados(int puntosGanados) {
-		this.puntosGanados = puntosGanados;
+		this.puntosGanados = this.puntosGanados+puntosGanados;
 	}
 
 
@@ -65,7 +65,7 @@ public class Equipo implements Comparable {
 
 
 	public void setGolesAFavor(int golesAFavor) {
-		this.golesAFavor = golesAFavor;
+		this.golesAFavor = this.golesAFavor+golesAFavor;
 	}
 
 
@@ -75,23 +75,29 @@ public class Equipo implements Comparable {
 
 
 	public void setGolesEnContra(int golesEnContra) {
-		this.golesEnContra = golesEnContra;
+		this.golesEnContra = this.golesEnContra+golesEnContra;
+	}	
+	@Override
+
+	public int compareTo(Object unEquipo) {
+		if (unEquipo instanceof Equipo) {
+			Equipo equipo = (Equipo) unEquipo;
+			return this.nombrePais.compareTo(equipo.getNombrePais());
+		} else {
+			// Manejo de la situación en la que el objeto no es de tipo Equipo
+			throw new IllegalArgumentException("El objeto proporcionado no es una instancia de la clase Equipo.");
+		}
 	}
+
 
 
 	@Override
 	public String toString() {
-		return "Equipo [nombrePais=" + nombrePais + ", directorTecnico=" + directorTecnico + ", grupo=" + grupo
-				+ ", puntosGanados=" + puntosGanados + ", golesAFavor=" + golesAFavor + ", golesEnContra="
-				+ golesEnContra + "]";
+		return "Equipo:"+nombrePais;
 	}
 
 
-	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+
 
 
 }

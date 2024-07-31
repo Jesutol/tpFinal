@@ -1,5 +1,7 @@
 package dominio;
 
+import java.util.Objects;
+
 public class ResultadoPartido {
 	   private String equipo1;
 	    private String equipo2;
@@ -69,6 +71,24 @@ public class ResultadoPartido {
 					+ ", ciudadEvento=" + ciudadEvento + ", nombreEstadio=" + nombreEstadio + ", golesEquipo1="
 					+ golesEquipo1 + ", golesEquipo2=" + golesEquipo2 + "]";
 		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash(ronda);
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			ResultadoPartido other = (ResultadoPartido) obj;
+			return Objects.equals(ronda, other.ronda);
+		}
+		
 	    
 		
 	    
