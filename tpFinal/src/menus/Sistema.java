@@ -156,7 +156,11 @@ public class Sistema {
 			}
 		}
 	}
-	public static void consultarPorPaisE() {}
+	public static void consultarPorPaisE() {
+		
+		System.out.println("Ingresar nombre del pais");
+		String  equipo =scanner.nextLine();
+	}
 	public static void mostrarEquiposA() {
 		
 		System.out.println("Ingrese el minimo (orden alfabetico)");
@@ -168,6 +172,11 @@ public class Sistema {
 		
 	}
 	public static void consultaPartido() {
+		System.out.println("Ingresar nombre de equipo 1");
+		String  equipo1 =scanner.nextLine();
+		System.out.println("Ingresar nombre de equipo 2");
+		String  equipo2 =scanner.nextLine();
+		
 
 
 	}
