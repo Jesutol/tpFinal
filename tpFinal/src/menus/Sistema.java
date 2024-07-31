@@ -7,7 +7,7 @@ import estructuras_de_datos.grafos.*;
 import estructuras_de_datos.lineales.dinamica.*;
 
 public class Sistema {
-	
+
 	private static AVL equipos=new AVL();
 	private static  MultiValueHashMap tabla=new  MultiValueHashMap();
 	private static Grafo mapa=new Grafo();
@@ -43,17 +43,17 @@ public class Sistema {
 
 				break;
 			case 3:
-
+				consultaPartido();
 				break;
 			case 4:
-				 mostrarMenuC();
+				mostrarMenuC();
 
 				break;
 			case 5:
-				
+				mostrarEquiposPorGoles();
 				break;
 			case 6:
-			DebugMenu.mostrarMenu(mapa, equipos, tabla);
+				DebugMenu.mostrarMenu(mapa, equipos, tabla);
 				break;
 			case 7:
 				salir = true;
@@ -83,11 +83,11 @@ public class Sistema {
 			switch (opcion) {
 			case 1:
 				CiudadMenu.mostrarMenu(mapa);
-				
+
 				break;
 			case 2:
 				EquipoMenu.mostrarMenu(equipos);
-				
+
 				break;
 			case 3:
 				PartidoMenu.mostrarMenu(tabla, equipos,mapa);
@@ -102,63 +102,100 @@ public class Sistema {
 		}
 	}
 	private static void mostrarMenuB() {
-        boolean salir = false;
-        while (!salir) {
-            System.out.println("Menu Consultas sobre Equipos");
-            System.out.println("1. Consultar por país");
-            System.out.println("2. Consultar por rango alfabético");
-            System.out.println("3. Volver al menú principal");
-            System.out.print("Seleccione una opción: ");
-            System.out.println();
-            int opcion = scanner.nextInt();
-            scanner.nextLine(); 
+		boolean salir = false;
+		while (!salir) {
+			System.out.println("Menu Consultas sobre Equipos");
+			System.out.println("1. Consultar por país estadisticas");
+			System.out.println("2. Consultar por rango alfabético con min y max");
+			System.out.println("3. Volver al menú principal");
+			System.out.print("Seleccione una opción: ");
+			System.out.println();
+			int opcion = scanner.nextInt();
+			scanner.nextLine(); 
 
-            switch (opcion) {
-                case 1:
-                   
-                    break;
-                case 2:
-                   
-                    break;
-                case 3:
-                    salir = true;
-                    break;
-                default:
-                    System.out.println("Opción no válida. Intente de nuevo.");
-            }
-        }
-    }
-	 private static void mostrarMenuC() {
-	        boolean salir = false;
-	        while (!salir) {
-	            System.out.println("Menu Consultas sobre Viajes");
-	            System.out.println("1. Obtener camino de menor tiempo");
-	            System.out.println("2. Obtener camino con mínima cantidad de ciudades");
-	            System.out.println("3. Volver al menú principal");
-	            System.out.print("Seleccione una opción: ");
-	            System.out.println();
-	            int opcion = scanner.nextInt();
-	            scanner.nextLine();  
+			switch (opcion) {
+			case 1:
+				consultarPorPaisE();
+				break;
+			case 2:
+				mostrarEquiposA();
 
-	            switch (opcion) {
-	                case 1:
-	                    caminoMenorTiempo();
-	                    break;
-	                case 2:
-	                    caminoMinimaCiudades();
-	                    break;
-	                case 3:
-	                    salir = true;
-	                    break;
-	                default:
-	                    System.out.println("Opcion no valida. Intente de nuevo.");
-	            }
-	        }
-	    }
-	 
-	 public static void caminoMenorTiempo() {
+				break;
+			case 3:
+				salir = true;
+				break;
+			default:
+				System.out.println("Opción no válida. Intente de nuevo.");
+			}
+		}
+	}
+	private static void mostrarMenuC() {
+		boolean salir = false;
+		while (!salir) {
+			System.out.println("Menu Consultas sobre Viajes");
+			System.out.println("1. Obtener camino de menor tiempo");
+			System.out.println("2. Obtener camino con mínima cantidad de ciudades");
+			System.out.println("3. Volver al menú principal");
+			System.out.print("Seleccione una opción: ");
+			System.out.println();
+			int opcion = scanner.nextInt();
+			  
+
+			switch (opcion) {
+			case 1:
+				caminoMenorTiempo();
+				break;
+			case 2:
+				caminoMinimaCiudades();
+				break;
+			case 3:
+				salir = true;
+				break;
+			default:
+				System.out.println("Opcion no valida. Intente de nuevo.");
+			}
+		}
+	}
+	public static void consultarPorPaisE() {}
+	public static void mostrarEquiposA() {
 		
-		 
-	 }
-	 public static void caminoMinimaCiudades() {}
+		System.out.println("Ingrese el minimo (orden alfabetico)");
+		String  min =scanner.nextLine();
+		System.out.println("Ingrese el maximo (orden alfabetico)");
+		String  max =scanner.nextLine();
+		System.out.println();
+		System.out.println(equipos.listarRango(min, max).toString());
+		
+	}
+	public static void consultaPartido() {
+
+
+	}
+
+
+	public static void caminoMenorTiempo() {
+		
+		System.out.println("Ingresar ciudad origen");
+		String  origen =scanner.nextLine();
+		System.out.println("Ingresar ciudad destino");
+		String  destino =scanner.nextLine();
+		System.out.println();
+		System.out.println(mapa.caminoMasCortoPorEtiqueta(origen, destino));
+
+
+	}
+	public static void caminoMinimaCiudades() {
+		System.out.println("Ingresar ciudad origen");
+		String  origen =scanner.nextLine();
+		System.out.println("Ingresar ciudad destino");
+		String  destino =scanner.nextLine();
+		System.out.println();
+		System.out.println(mapa.caminoMasCorto(origen, destino));
+
+
+	}
+	public static void mostrarEquiposPorGoles() {
+
+
+	}
 }
