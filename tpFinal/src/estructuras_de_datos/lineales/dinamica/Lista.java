@@ -250,21 +250,30 @@ public class Lista {
 
 	@Override
 	public String toString() {
-		String s = "[";
+		String s="";
+		
+		if(esVacia()) {
+			 s = "[lista vacia]";
+			
+		}else {
+			
+			 s = "[";
 
-		Nodo aux = this.cabecera;
+			Nodo aux = this.cabecera;
 
 
-		if (aux != null) {
-			while (aux != null) {
-				s += aux.getElemen();
-				aux = aux.getEnlace();
-				if (aux != null)
-					s += ",";
+			if (aux != null) {
+				while (aux != null) {
+					s += aux.getElemen().toString();
+					aux = aux.getEnlace();
+					if (aux != null)
+						s += ",";
+				}
 			}
-		}
 
-		s += "]";
+			s += "]";
+		}
+	
 
 		return s;
 	}

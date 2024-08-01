@@ -8,6 +8,8 @@ public class Equipo implements Comparable {
 	private int golesAFavor;
 	private int golesEnContra;
 
+	
+	
 
 	public Equipo(String nombrePais, String directorTecnico, char grupo) {
 		this.nombrePais = nombrePais;
@@ -17,6 +19,21 @@ public class Equipo implements Comparable {
 		this.golesAFavor = 0;
 		this.golesEnContra = 0;
 	}
+	
+
+
+	public Equipo(String nombrePais) {
+		this.nombrePais = nombrePais;
+		this.directorTecnico = "";
+		this.grupo = ' ';
+		this.puntosGanados =0;
+		this.golesAFavor = 0;
+		this.golesEnContra=0;
+		
+
+	}
+	
+
 
 
 	public String getNombrePais() {
@@ -77,6 +94,11 @@ public class Equipo implements Comparable {
 	public void setGolesEnContra(int golesEnContra) {
 		this.golesEnContra = this.golesEnContra+golesEnContra;
 	}	
+	
+	public int calculaDiferenciaDeGoles() {
+		
+		return golesAFavor-golesEnContra;
+	}
 	@Override
 
 	public int compareTo(Object unEquipo) {
@@ -93,7 +115,7 @@ public class Equipo implements Comparable {
 
 	@Override
 	public String toString() {
-		return "Equipo:"+nombrePais;
+		return nombrePais;
 	}
 
 

@@ -65,8 +65,10 @@ public class EquipoMenu {
 
     private static void bajaEquipo(AVL equipos) {
         System.out.print("Ingrese el nombre del pais del equipo: ");
-        String nombrePais = scanner.nextLine();
-        if(equipos.eliminar(nombrePais)) {
+        String nombrePais = scanner.nextLine().trim();
+        nombrePais=nombrePais.toUpperCase();
+        Equipo aux=new Equipo(nombrePais);
+        if(equipos.eliminar(aux)) {
         	 LecturaEscritura.eliminarEquipo(nombrePais);
              System.out.println("Equipo " + nombrePais + " eliminado exitosamente.");
         	
@@ -78,10 +80,11 @@ public class EquipoMenu {
 
     private static void modificarDirectorTecnico(AVL equipos) {
         System.out.print("Ingrese el nombre del pais del equipo: ");
-        String nombrePais = scanner.nextLine();
-        
+        String nombrePais = scanner.nextLine().trim();
+        nombrePais=nombrePais.toUpperCase();
         // Buscar el equipo
-        Equipo equipo = (Equipo) equipos.obtenerElemento(nombrePais);
+        Equipo equipo= new Equipo(nombrePais);
+         equipo = (Equipo) equipos.obtenerElemento(equipo);
         if (equipo != null) {
             System.out.print("Ingrese el nuevo nombre del director tecnico: ");
             String nuevoDirectorTecnico = scanner.nextLine();

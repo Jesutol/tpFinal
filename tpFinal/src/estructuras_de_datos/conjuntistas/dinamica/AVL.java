@@ -552,6 +552,19 @@ public class AVL {
 
 		return hijo;
 	}
+	public Lista listaInOrder() {
+        Lista lista = new Lista();
+        inOrderAux(this.raiz, lista);
+        return lista;
+    }
+
+    private void inOrderAux(NodoAvl nodo, Lista lista) {
+        if (nodo != null) {
+            inOrderAux(nodo.getHijoIzq(), lista);
+            lista.insertar(nodo.getElemento(), lista.longitud() + 1);
+            inOrderAux(nodo.getHijoDer(), lista);
+        }
+    }
 	   public Object obtenerElemento(Object elemento) {
 	        NodoAvl nodo = buscaNodo(this.raiz, elemento);
 	        return (nodo != null) ?  nodo.getElemento() : null;

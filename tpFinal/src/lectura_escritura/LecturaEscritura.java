@@ -23,20 +23,29 @@ public class LecturaEscritura {
 	public static final String resultados_path = "src/datos/Partidos.txt";
 	public static final String rutas_path = "src/datos/Rutas.txt";
 
-	
+
 	public static void cargaTodosLosDatos(Grafo mapa,AVL equipos,MultiValueHashMap partidos){
-		leerEquipos(equipos);
+
 		leerCiudad(mapa);
+		leerEquipos(equipos);
+		leerResultadoPartido(partidos, equipos);
 		leerRutaAerea(mapa);
-		leerResultadoPartido(partidos);
-		
-		
+
+
+
+
+
 	}
 
 	public static void leerCiudad(Grafo mapa) {
 		try (BufferedReader br = new BufferedReader(new FileReader(ciudades_path))) {
 			String linea;
 			while ((linea = br.readLine()) != null) {
+				// Ignorar el prefijo 'C: '
+				if (linea.startsWith("C: ")) {
+					linea = linea.substring(2).trim(); // Eliminar 'C: ' del inicio
+				}
+
 				StringTokenizer st = new StringTokenizer(linea, ";");
 				if (st.countTokens() == 3) {
 					String nombre = st.nextToken().trim();
@@ -52,6 +61,7 @@ public class LecturaEscritura {
 			e.printStackTrace();
 		}
 	}
+
 
 	public static void leerEquipos(AVL equipos) {
 		try (BufferedReader br = new BufferedReader(new FileReader(equipos_path))) {
@@ -76,7 +86,7 @@ public class LecturaEscritura {
 		}
 	}
 
-	public static void leerResultadoPartido(MultiValueHashMap partidos) {
+	public static void leerResultadoPartido(MultiValueHashMap partidos,AVL equipos) {
 		try (BufferedReader br = new BufferedReader(new FileReader(resultados_path))) {
 			String linea;
 			while ((linea = br.readLine()) != null) {
@@ -92,8 +102,37 @@ public class LecturaEscritura {
 						int golesEquipo1 = Integer.parseInt(st.nextToken().trim());
 						int golesEquipo2 = Integer.parseInt(st.nextToken().trim());
 
+
 						ResultadoPartido resultado = new ResultadoPartido(equipo1, equipo2, ronda, ciudadEvento, nombreEstadio, golesEquipo1, golesEquipo2);
-						System.out.println(resultado.toString());
+						partidos.put(resultado.getClave(), resultado);
+				
+
+						Equipo auxE1=new Equipo(equipo1);
+						Equipo auxE2=new Equipo(equipo2);
+						 auxE1 = (Equipo) equipos.obtenerElemento(auxE1);
+						 auxE2 = (Equipo) equipos.obtenerElemento(auxE2);
+						 
+						 if(auxE1!=null&&auxE2!=null) {
+							// Asignar goles
+								auxE1.setGolesAFavor(golesEquipo1);
+								auxE1.setGolesEnContra(golesEquipo2);
+								auxE2.setGolesAFavor(golesEquipo2);
+								auxE2.setGolesEnContra(golesEquipo1);
+
+								// Asignar puntos
+								if (golesEquipo1 > golesEquipo2) {
+									auxE1.setPuntosGanados(3);
+								} else if (golesEquipo1 < golesEquipo2) {
+									auxE2.setPuntosGanados(3);
+								} else {
+									auxE1.setPuntosGanados(1);
+									auxE2.setPuntosGanados(1);
+								}
+
+							 
+						 }
+
+
 					}
 				}
 			}
@@ -114,8 +153,14 @@ public class LecturaEscritura {
 						String ciudadDestino = st.nextToken().trim();
 						double tiempoVuelo = Double.parseDouble(st.nextToken().trim());
 
+						Ciudad auxO=new Ciudad(ciudadOrigen);
+						Ciudad auxD=new Ciudad(ciudadDestino);
 						RutaAerea rutaAerea = new RutaAerea(ciudadOrigen, ciudadDestino, tiempoVuelo);
 						System.out.println(rutaAerea.toString());
+						System.out.println(mapa.insertarArco(auxO, auxD, tiempoVuelo));
+
+
+
 					}
 				}
 			}
@@ -126,7 +171,7 @@ public class LecturaEscritura {
 
 	public static void escribirCiudad(Ciudad ciudad) {
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(ciudades_path, true))) {
-			bw.write("C:" + ciudad.getNombre() + ";" + ciudad.getAlojamientoDisponible() + ";" + ciudad.getEsSede());
+			bw.write("C: " + ciudad.getNombre() + ";" + ciudad.getAlojamientoDisponible() + ";" + ciudad.getEsSede());
 			bw.newLine();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -144,7 +189,7 @@ public class LecturaEscritura {
 
 	public static void escribirResultadoPartido(ResultadoPartido resultado) {
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(resultados_path, true))) {
-			bw.write("P: " + resultado.getEquipo1() + ";" + resultado.getEquipo2() + ";" + resultado.getRonda() + ";" +
+			bw.write("P: " + resultado.getClave().getEquipo1() + ";" + resultado.getClave().getEquipo2() + ";" + resultado.getRonda() + ";" +
 					resultado.getCiudadEvento() + ";" + resultado.getNombreEstadio() + ";" + resultado.getGolesEquipo1() + ";" +
 					resultado.getGolesEquipo2());
 			bw.newLine();

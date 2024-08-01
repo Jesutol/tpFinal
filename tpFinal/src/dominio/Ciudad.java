@@ -14,6 +14,10 @@ public class Ciudad {
 		this.alojamientoDisponible = alojamientoDisponible;
 		this.esSede = esSede;
 	}
+	public Ciudad(String nombre) {
+		this.nombre = nombre;
+	
+	}
 	public String getNombre() {
 		return nombre;
 	}
@@ -38,19 +42,24 @@ public class Ciudad {
 		return Objects.hash(nombre);
 	}
 	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Ciudad other = (Ciudad) obj;
-		return Objects.equals(nombre, other.nombre);
-	}
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Ciudad other = (Ciudad) obj;
+        if (nombre == null) {
+            if (other.nombre != null)
+                return false;
+        } else if (!nombre.equalsIgnoreCase(other.nombre))
+            return false;
+        return true;
+    }
 	@Override
 	public String toString() {
-		return "Ciudad: "+nombre;
+		return nombre;
 	}
 
 

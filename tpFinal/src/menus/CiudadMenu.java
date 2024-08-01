@@ -8,9 +8,6 @@ import estructuras_de_datos.grafos.*;
 public class CiudadMenu {
     private static Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        // Aquí se puede inicializar el grafo y llamar a mostrarMenu(mapa) si es necesario
-    }
 
     public static void mostrarMenu(Grafo mapa) {
         boolean salir = false;
@@ -77,75 +74,68 @@ public class CiudadMenu {
 
     private static void bajaCiudad(Grafo m) {
         System.out.print("Ingrese el nombre de la ciudad a eliminar: ");
-        String nombre = scanner.nextLine();
+        String nombre = scanner.nextLine().trim();
        nombre= nombre.toUpperCase();
-        if (m.eliminarVert(nombre)) {
+       Ciudad aux=new Ciudad(nombre);
+        if (m.eliminarVert(aux)) {
             LecturaEscritura.eliminarCiudad(nombre);
             System.out.println("Ciudad " + nombre + " eliminada exitosamente.");
         } else {
             System.out.println("Ciudad " + nombre + " No fue encontrada en el mapa.");
         }
     }
-
     private static void modificarCiudad(Grafo m) {
         System.out.print("Ingrese el nombre de la ciudad a modificar: ");
-        String nombre = scanner.nextLine();
-       nombre= nombre.toUpperCase();
-        Ciudad ciudad = (Ciudad) m.obtenerElemento(nombre);
+        String nombre = scanner.nextLine().trim().toUpperCase();
+        Ciudad ciudad = new Ciudad(nombre);
+        ciudad = (Ciudad) m.obtenerElemento(ciudad);
         
         if (ciudad != null) {
-            System.out.println("Modificar datos de la ciudad " + nombre);
-            System.out.println("1. Cambiar estado de alojamiento disponible");
-            System.out.println("2. Cambiar estado de sede");
-            System.out.println("3. Volver al menu anterior");
-            System.out.print("Seleccione una opcion: ");
-            int opcion = scanner.nextInt();
-            scanner.nextLine();
-            boolean seguir =true;
-            while(seguir) {
-            	switch (opcion) {
-                case 1:
-                    boolean nuevoAlojamientoDisponible = false;
-                    System.out.print("Nuevo estado de alojamiento disponible (true/false): ");
-                    try {
-                        nuevoAlojamientoDisponible = scanner.nextBoolean();
-                        LecturaEscritura.eliminarCiudad(nombre);
-                        LecturaEscritura.escribirCiudad(ciudad);
-                        System.out.println("Ciudad " + nombre + " modificada exitosamente.");
-                    } catch (InputMismatchException e) {
-                        System.out.println("Entrada no valida. Por favor, ingrese 'true' o 'false'.");
-                    
-                    }
-                    ciudad.setAlojamientoDisponible(nuevoAlojamientoDisponible);
-                    System.out.println("Estado de alojamiento disponible actualizado.");
-                    break;
-
-                case 2:
-                    boolean nuevoEsSede = false;
-                    System.out.print("Nuevo estado de sede (true/false): ");
-                    try {
-                        nuevoEsSede = scanner.nextBoolean();
-                        LecturaEscritura.eliminarCiudad(nombre);
-                        LecturaEscritura.escribirCiudad(ciudad);
-                        System.out.println("Ciudad " + nombre + " modificada exitosamente.");
-                    } catch (InputMismatchException e) {
-                        System.out.println("Entrada no valida. Por favor, ingrese 'true' o 'false'.");
+            boolean seguir = true;
+            while (seguir) {
+                System.out.println("Modificar datos de la ciudad " + nombre);
+                System.out.println("1. Cambiar estado de alojamiento disponible");
+                System.out.println("2. Cambiar estado de sede");
+                System.out.println("3. Volver al menú anterior");
+                System.out.print("Seleccione una opción: ");
                 
+                try {
+                    int opcion = scanner.nextInt();
+                    scanner.nextLine(); // Limpia el buffer
+
+                    switch (opcion) {
+                        case 1:
+                            System.out.print("Nuevo estado de alojamiento disponible (true/false): ");
+                            boolean nuevoAlojamientoDisponible = scanner.nextBoolean();
+                            scanner.nextLine(); // Limpia el buffer
+                            ciudad.setAlojamientoDisponible(nuevoAlojamientoDisponible);
+                            LecturaEscritura.eliminarCiudad(nombre);
+                            LecturaEscritura.escribirCiudad(ciudad);
+                            System.out.println("Estado de alojamiento disponible actualizado.");
+                            break;
+
+                        case 2:
+                            System.out.print("Nuevo estado de sede (true/false): ");
+                            boolean nuevoEsSede = scanner.nextBoolean();
+                            scanner.nextLine(); // Limpia el buffer
+                            ciudad.setEsSede(nuevoEsSede);
+                            LecturaEscritura.eliminarCiudad(nombre);
+                            LecturaEscritura.escribirCiudad(ciudad);
+                            System.out.println("Estado de sede actualizado.");
+                            break;
+
+                        case 3:
+                            seguir = false;
+                            break;
+
+                        default:
+                            System.out.println("Opción no válida. Intente de nuevo.");
                     }
-                    ciudad.setEsSede(nuevoEsSede);
-                    System.out.println("Estado de sede actualizado.");
-                    break;
-
-                case 3:
-                  
-
-                default:
-                    System.out.println("Opcion no valida. Intente de nuevo.");
+                } catch (InputMismatchException e) {
+                    System.out.println("Entrada no válida. Por favor, ingrese un número para la opción y 'true' o 'false' según corresponda.");
+                    scanner.nextLine(); // Limpia el buffer de entrada
+                }
             }
-
-            }
-            // Guardar los cambios en la persistencia
-         
         } else {
             System.out.println("Ciudad " + nombre + " no fue encontrada.");
         }

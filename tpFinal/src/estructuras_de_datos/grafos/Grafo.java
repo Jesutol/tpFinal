@@ -354,29 +354,29 @@ public class Grafo {
 
 
 	public String toString() {
-		String salida = "";
+	    String salida = "";
 
-		if (this.inicio != null) {
+	    if (this.inicio != null) {
+	        salida += "[ Vertices ] : [Etiqueta,Vertice] \n";
 
-			salida += "[ Vertices ] : [Etiqueta,Vertice] \n";
+	        NodoVert nodo_vertice = this.inicio;
 
-			NodoVert nodo_vertice = this.inicio;
+	        while (nodo_vertice != null) {
+	            salida += "[ " + nodo_vertice.getElemento().toString() + " ] :";
 
-			while (nodo_vertice != null) {
-				salida += "[ " + nodo_vertice.getElemento() + " ] :";
-
-				NodoAd nodo_adyacente = nodo_vertice.getPrimerAd();
-				while (nodo_adyacente != null) {
-					salida += "[ " + nodo_adyacente.getEtiqueta().toString() + " , "
-							+ nodo_adyacente.getVertice().getElemento().toString() + " ] ";
-					nodo_adyacente = nodo_adyacente.getSigAd();
-				}
-				salida += "\n";
-				nodo_vertice = nodo_vertice.getSigVertice();
-			}
-		}
-		return salida;
+	            NodoAd nodo_adyacente = nodo_vertice.getPrimerAd();
+	            while (nodo_adyacente != null) {
+	                salida += "[ " + nodo_adyacente.getEtiqueta().toString() + " , "
+	                        + nodo_adyacente.getVertice().getElemento().toString() + " ] ";
+	                nodo_adyacente = nodo_adyacente.getSigAd();
+	            }
+	            salida += "\n";
+	            nodo_vertice = nodo_vertice.getSigVertice();
+	        }
+	    }
+	    return salida;
 	}
+
 
 
 
