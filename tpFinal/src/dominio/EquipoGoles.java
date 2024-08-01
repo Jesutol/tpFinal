@@ -82,13 +82,19 @@ public class EquipoGoles implements Comparable<EquipoGoles> {
         return golesAFavor - golesEnContra;
     }
 
+
     @Override
     public int compareTo(EquipoGoles otroEquipo) {
-        return Integer.compare(this.golesAFavor, otroEquipo.getGolesAFavor());
+        int comparacionGoles = Integer.compare(this.golesAFavor, otroEquipo.getGolesAFavor());
+        if (comparacionGoles != 0) {
+            return comparacionGoles;
+        } else {
+            return this.nombrePais.compareTo(otroEquipo.getNombrePais());
+        }
     }
 
     @Override
     public String toString() {
-        return nombrePais;
+        return nombrePais+" goles "+golesAFavor+" ";
     }
 }

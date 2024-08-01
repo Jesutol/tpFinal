@@ -80,7 +80,7 @@ public class ResultadoPartido {
 
 		@Override
 		public String toString() {
-			return "ResultadoPartido:"+ " ronda=" + ronda
+			return "ResultadoPartido:"+clave.toString()+ " ronda=" + ronda
 					+ ", ciudadEvento=" + ciudadEvento + ", nombreEstadio=" + nombreEstadio + ", golesEquipo1="
 					+ golesEquipo1 + ", golesEquipo2=" + golesEquipo2 + "]";
 		}

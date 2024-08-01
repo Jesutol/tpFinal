@@ -1,6 +1,7 @@
 package menus;
 
 import java.util.Scanner;
+import logs.*;
 
 
 import dominio.Ciudad;
@@ -20,7 +21,10 @@ public class Sistema {
 	private static Grafo mapa=new Grafo();
 	private static Scanner scanner = new Scanner(System.in);
 	public static void main(String[] args) {
+		LecturaEscritura.crearLog();
 		LecturaEscritura.cargaTodosLosDatos(mapa, equipos, tabla);
+		
+		
 		menu();
 	
 	}
@@ -277,6 +281,7 @@ public class Sistema {
 				i++;
 				
 			}
+			
 			System.out.println(ordenaE.lista());
 			
 		
