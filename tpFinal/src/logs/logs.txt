@@ -1,100 +1,100 @@
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: LOS ANGELES
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: LAS VEGAS
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: MIAMI
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: NEW YORK
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: ORLANDO
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: HOUSTON
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: DALLAS
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: ATLANTA
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: SEATTLE
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: SAN FRANCISCO
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: CHICAGO
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: BOSTON
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: PHOENIX
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: DENVER
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: WASHINGTON
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: DETROIT
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: MINNEAPOLIS
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: CHARLOTTE
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: PHILADELPHIA
-[2024-08-02 17:57:37] [INFO] Ciudad cargada: SAN DIEGO
-[2024-08-02 17:57:37] [INFO] Equipo cargado: VENEZUELA
-[2024-08-02 17:57:37] [INFO] Equipo cargado: ARGENTINA
-[2024-08-02 17:57:37] [INFO] Equipo cargado: PARAGUAY
-[2024-08-02 17:57:37] [INFO] Equipo cargado: JAMAICA
-[2024-08-02 17:57:37] [INFO] Equipo cargado: PERU
-[2024-08-02 17:57:37] [INFO] Equipo cargado: COLOMBIA
-[2024-08-02 17:57:37] [INFO] Equipo cargado: URUGUAY
-[2024-08-02 17:57:37] [INFO] Equipo cargado: MEXICO
-[2024-08-02 17:57:37] [INFO] Equipo cargado: BOLIVIA
-[2024-08-02 17:57:37] [INFO] Equipo cargado: BRASIL
-[2024-08-02 17:57:37] [INFO] Equipo cargado: PANAMA
-[2024-08-02 17:57:37] [INFO] Equipo cargado: ESTADOS UNIDOS
-[2024-08-02 17:57:37] [INFO] Equipo cargado: ECUADOR
-[2024-08-02 17:57:37] [INFO] Equipo cargado: CANADA
-[2024-08-02 17:57:37] [INFO] Equipo cargado: COSTA RICA
-[2024-08-02 17:57:37] [INFO] Equipo cargado: CHILE
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:ARGENTINA-CANADÁ ronda=GRUPO, ciudadEvento=ATLANTA, nombreEstadio=MERCEDES-BENZ, golesEquipo1=2, golesEquipo2=0]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:CHILE-PERÚ ronda=GRUPO, ciudadEvento=MIAMI, nombreEstadio=HARD ROCK STADIUM, golesEquipo1=1, golesEquipo2=1]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:ARGENTINA-CHILE ronda=GRUPO, ciudadEvento=SEATTLE, nombreEstadio=LUMEN FIELD, golesEquipo1=3, golesEquipo2=1]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:CANADÁ-PERÚ ronda=GRUPO, ciudadEvento=HOUSTON, nombreEstadio=NRG STADIUM, golesEquipo1=1, golesEquipo2=2]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:ARGENTINA-PERÚ ronda=GRUPO, ciudadEvento=WASHINGTON, nombreEstadio=FEDEXFIELD, golesEquipo1=1, golesEquipo2=0]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:CANADÁ-CHILE ronda=GRUPO, ciudadEvento=DETROIT, nombreEstadio=FORD FIELD, golesEquipo1=1, golesEquipo2=3]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:ECUADOR-VENEZUELA ronda=GRUPO, ciudadEvento=NEW YORK, nombreEstadio=METLIFE STADIUM, golesEquipo1=3, golesEquipo2=0]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:JAMAICA-MÉXICO ronda=GRUPO, ciudadEvento=LAS VEGAS, nombreEstadio=ALLEGIANT STADIUM, golesEquipo1=2, golesEquipo2=1]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:MÉXICO-VENEZUELA ronda=GRUPO, ciudadEvento=LOS ANGELES, nombreEstadio=SOFI STADIUM, golesEquipo1=0, golesEquipo2=2]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:ECUADOR-JAMAICA ronda=GRUPO, ciudadEvento=ORLANDO, nombreEstadio=EXPLORIA STADIUM, golesEquipo1=1, golesEquipo2=1]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:PARAGUAY-URUGUAY ronda=GRUPO, ciudadEvento=CHICAGO, nombreEstadio=SOLDIER FIELD, golesEquipo1=1, golesEquipo2=2]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:BOLIVIA-ESTADOS UNIDOS ronda=GRUPO, ciudadEvento=BOSTON, nombreEstadio=GILLETTE STADIUM, golesEquipo1=0, golesEquipo2=4]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:BRASIL-COLOMBIA ronda=GRUPO, ciudadEvento=SAN FRANCISCO, nombreEstadio=LEVI'S STADIUM, golesEquipo1=3, golesEquipo2=1]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:COSTA RICA-PANAMÁ ronda=GRUPO, ciudadEvento=DALLAS, nombreEstadio=AT&T STADIUM, golesEquipo1=2, golesEquipo2=2]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:COLOMBIA-COSTA RICA ronda=GRUPO, ciudadEvento=CHARLOTTE, nombreEstadio=BANK OF AMERICA STADIUM, golesEquipo1=2, golesEquipo2=1]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:BRASIL-PANAMÁ ronda=GRUPO, ciudadEvento=PHILADELPHIA, nombreEstadio=LINCOLN FINANCIAL FIELD, golesEquipo1=3, golesEquipo2=0]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:ARGENTINA-JAMAICA ronda=CUARTOS, ciudadEvento=SEATTLE, nombreEstadio=LUMEN FIELD, golesEquipo1=2, golesEquipo2=1]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:BRASIL-VENEZUELA ronda=CUARTOS, ciudadEvento=MIAMI, nombreEstadio=HARD ROCK STADIUM, golesEquipo1=0, golesEquipo2=1]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:ESTADOS UNIDOS-PERÚ ronda=CUARTOS, ciudadEvento=NEW YORK, nombreEstadio=METLIFE STADIUM, golesEquipo1=2, golesEquipo2=1]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:CHILE-ECUADOR ronda=CUARTOS, ciudadEvento=HOUSTON, nombreEstadio=NRG STADIUM, golesEquipo1=3, golesEquipo2=1]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:ARGENTINA-ESTADOS UNIDOS ronda=SEMIFINAL, ciudadEvento=LOS ANGELES, nombreEstadio=SOFI STADIUM, golesEquipo1=3, golesEquipo2=2]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:CHILE-VENEZUELA ronda=SEMIFINAL, ciudadEvento=DALLAS, nombreEstadio=AT&T STADIUM, golesEquipo1=1, golesEquipo2=2]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:CHILE-ESTADOS UNIDOS ronda=TERCER LUGAR, ciudadEvento=BOSTON, nombreEstadio=GILLETTE STADIUM, golesEquipo1=0, golesEquipo2=1]
-[2024-08-02 17:57:37] [INFO] Resultado partido cargado: ResultadoPartido:ARGENTINA-VENEZUELA ronda=FINAL, ciudadEvento=ATLANTA, nombreEstadio=MERCEDES-BENZ, golesEquipo1=3, golesEquipo2=1]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=LOS ANGELES, ciudadDestino=NEW YORK, tiempoVuelo=330.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=LAS VEGAS, ciudadDestino=MIAMI, tiempoVuelo=270.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=CHICAGO, ciudadDestino=SAN FRANCISCO, tiempoVuelo=240.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=HOUSTON, ciudadDestino=SEATTLE, tiempoVuelo=240.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=DALLAS, ciudadDestino=BOSTON, tiempoVuelo=210.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=ATLANTA, ciudadDestino=LOS ANGELES, tiempoVuelo=270.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SAN FRANCISCO, ciudadDestino=NEW YORK, tiempoVuelo=300.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=ORLANDO, ciudadDestino=WASHINGTON, tiempoVuelo=120.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SEATTLE, ciudadDestino=LAS VEGAS, tiempoVuelo=150.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=PHILADELPHIA, ciudadDestino=MIAMI, tiempoVuelo=150.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=DETROIT, ciudadDestino=CHARLOTTE, tiempoVuelo=120.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=NEW YORK, ciudadDestino=PHILADELPHIA, tiempoVuelo=60.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=DENVER, ciudadDestino=SAN FRANCISCO, tiempoVuelo=150.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SAN DIEGO, ciudadDestino=HOUSTON, tiempoVuelo=180.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=CHARLOTTE, ciudadDestino=MIAMI, tiempoVuelo=90.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=MINNEAPOLIS, ciudadDestino=ATLANTA, tiempoVuelo=150.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=MIAMI, ciudadDestino=NEW YORK, tiempoVuelo=180.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SEATTLE, ciudadDestino=LOS ANGELES, tiempoVuelo=150.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=PHOENIX, ciudadDestino=DETROIT, tiempoVuelo=210.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=ATLANTA, ciudadDestino=PHILADELPHIA, tiempoVuelo=90.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=CHICAGO, ciudadDestino=LAS VEGAS, tiempoVuelo=210.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=HOUSTON, ciudadDestino=BOSTON, tiempoVuelo=180.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=CHARLOTTE, ciudadDestino=SEATTLE, tiempoVuelo=240.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=NEW YORK, ciudadDestino=CHICAGO, tiempoVuelo=120.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=MIAMI, ciudadDestino=DENVER, tiempoVuelo=240.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=LAS VEGAS, ciudadDestino=DETROIT, tiempoVuelo=210.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SAN FRANCISCO, ciudadDestino=ORLANDO, tiempoVuelo=270.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SEATTLE, ciudadDestino=DALLAS, tiempoVuelo=240.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=BOSTON, ciudadDestino=WASHINGTON D.C., tiempoVuelo=60.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=LOS ANGELES, ciudadDestino=PHOENIX, tiempoVuelo=60.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SAN DIEGO, ciudadDestino=CHARLOTTE, tiempoVuelo=240.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=DETROIT, ciudadDestino=MINNEAPOLIS, tiempoVuelo=90.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=HOUSTON, ciudadDestino=NEW YORK, tiempoVuelo=210.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=MINNEAPOLIS, ciudadDestino=DENVER, tiempoVuelo=150.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=CHICAGO, ciudadDestino=MIAMI, tiempoVuelo=180.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SAN DIEGO, ciudadDestino=BOSTON, tiempoVuelo=270.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=LAS VEGAS, ciudadDestino=SEATTLE, tiempoVuelo=150.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=PHILADELPHIA, ciudadDestino=ATLANTA, tiempoVuelo=120.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=DALLAS, ciudadDestino=SAN FRANCISCO, tiempoVuelo=240.0]
-[2024-08-02 17:57:37] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SAN FRANCISCO, ciudadDestino=DENVER, tiempoVuelo=150.0]
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: LOS ANGELES
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: LAS VEGAS
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: MIAMI
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: NEW YORK
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: ORLANDO
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: HOUSTON
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: DALLAS
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: ATLANTA
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: SEATTLE
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: SAN FRANCISCO
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: CHICAGO
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: BOSTON
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: PHOENIX
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: DENVER
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: WASHINGTON
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: DETROIT
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: MINNEAPOLIS
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: CHARLOTTE
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: PHILADELPHIA
+[2024-08-02 19:05:49] [INFO] Ciudad cargada: SAN DIEGO
+[2024-08-02 19:05:49] [INFO] Equipo cargado: VENEZUELA
+[2024-08-02 19:05:49] [INFO] Equipo cargado: ARGENTINA
+[2024-08-02 19:05:49] [INFO] Equipo cargado: PARAGUAY
+[2024-08-02 19:05:49] [INFO] Equipo cargado: JAMAICA
+[2024-08-02 19:05:49] [INFO] Equipo cargado: PERU
+[2024-08-02 19:05:49] [INFO] Equipo cargado: COLOMBIA
+[2024-08-02 19:05:49] [INFO] Equipo cargado: URUGUAY
+[2024-08-02 19:05:49] [INFO] Equipo cargado: MEXICO
+[2024-08-02 19:05:49] [INFO] Equipo cargado: BOLIVIA
+[2024-08-02 19:05:49] [INFO] Equipo cargado: BRASIL
+[2024-08-02 19:05:49] [INFO] Equipo cargado: PANAMA
+[2024-08-02 19:05:49] [INFO] Equipo cargado: ESTADOS UNIDOS
+[2024-08-02 19:05:49] [INFO] Equipo cargado: ECUADOR
+[2024-08-02 19:05:49] [INFO] Equipo cargado: CANADA
+[2024-08-02 19:05:49] [INFO] Equipo cargado: COSTA RICA
+[2024-08-02 19:05:49] [INFO] Equipo cargado: CHILE
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:ARGENTINA-CANADÁ ronda=GRUPO, ciudadEvento=ATLANTA, nombreEstadio=MERCEDES-BENZ, golesEquipo1=2, golesEquipo2=0]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:CHILE-PERÚ ronda=GRUPO, ciudadEvento=MIAMI, nombreEstadio=HARD ROCK STADIUM, golesEquipo1=1, golesEquipo2=1]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:ARGENTINA-CHILE ronda=GRUPO, ciudadEvento=SEATTLE, nombreEstadio=LUMEN FIELD, golesEquipo1=3, golesEquipo2=1]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:CANADÁ-PERÚ ronda=GRUPO, ciudadEvento=HOUSTON, nombreEstadio=NRG STADIUM, golesEquipo1=1, golesEquipo2=2]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:ARGENTINA-PERÚ ronda=GRUPO, ciudadEvento=WASHINGTON, nombreEstadio=FEDEXFIELD, golesEquipo1=1, golesEquipo2=0]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:CANADÁ-CHILE ronda=GRUPO, ciudadEvento=DETROIT, nombreEstadio=FORD FIELD, golesEquipo1=1, golesEquipo2=3]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:ECUADOR-VENEZUELA ronda=GRUPO, ciudadEvento=NEW YORK, nombreEstadio=METLIFE STADIUM, golesEquipo1=3, golesEquipo2=0]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:JAMAICA-MÉXICO ronda=GRUPO, ciudadEvento=LAS VEGAS, nombreEstadio=ALLEGIANT STADIUM, golesEquipo1=2, golesEquipo2=1]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:MÉXICO-VENEZUELA ronda=GRUPO, ciudadEvento=LOS ANGELES, nombreEstadio=SOFI STADIUM, golesEquipo1=0, golesEquipo2=2]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:ECUADOR-JAMAICA ronda=GRUPO, ciudadEvento=ORLANDO, nombreEstadio=EXPLORIA STADIUM, golesEquipo1=1, golesEquipo2=1]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:PARAGUAY-URUGUAY ronda=GRUPO, ciudadEvento=CHICAGO, nombreEstadio=SOLDIER FIELD, golesEquipo1=1, golesEquipo2=2]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:BOLIVIA-ESTADOS UNIDOS ronda=GRUPO, ciudadEvento=BOSTON, nombreEstadio=GILLETTE STADIUM, golesEquipo1=0, golesEquipo2=4]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:BRASIL-COLOMBIA ronda=GRUPO, ciudadEvento=SAN FRANCISCO, nombreEstadio=LEVI'S STADIUM, golesEquipo1=3, golesEquipo2=1]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:COSTA RICA-PANAMÁ ronda=GRUPO, ciudadEvento=DALLAS, nombreEstadio=AT&T STADIUM, golesEquipo1=2, golesEquipo2=2]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:COLOMBIA-COSTA RICA ronda=GRUPO, ciudadEvento=CHARLOTTE, nombreEstadio=BANK OF AMERICA STADIUM, golesEquipo1=2, golesEquipo2=1]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:BRASIL-PANAMÁ ronda=GRUPO, ciudadEvento=PHILADELPHIA, nombreEstadio=LINCOLN FINANCIAL FIELD, golesEquipo1=3, golesEquipo2=0]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:ARGENTINA-JAMAICA ronda=CUARTOS, ciudadEvento=SEATTLE, nombreEstadio=LUMEN FIELD, golesEquipo1=2, golesEquipo2=1]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:BRASIL-VENEZUELA ronda=CUARTOS, ciudadEvento=MIAMI, nombreEstadio=HARD ROCK STADIUM, golesEquipo1=0, golesEquipo2=1]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:ESTADOS UNIDOS-PERÚ ronda=CUARTOS, ciudadEvento=NEW YORK, nombreEstadio=METLIFE STADIUM, golesEquipo1=2, golesEquipo2=1]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:CHILE-ECUADOR ronda=CUARTOS, ciudadEvento=HOUSTON, nombreEstadio=NRG STADIUM, golesEquipo1=3, golesEquipo2=1]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:ARGENTINA-ESTADOS UNIDOS ronda=SEMIFINAL, ciudadEvento=LOS ANGELES, nombreEstadio=SOFI STADIUM, golesEquipo1=3, golesEquipo2=2]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:CHILE-VENEZUELA ronda=SEMIFINAL, ciudadEvento=DALLAS, nombreEstadio=AT&T STADIUM, golesEquipo1=1, golesEquipo2=2]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:CHILE-ESTADOS UNIDOS ronda=TERCER LUGAR, ciudadEvento=BOSTON, nombreEstadio=GILLETTE STADIUM, golesEquipo1=0, golesEquipo2=1]
+[2024-08-02 19:05:49] [INFO] Resultado partido cargado: ResultadoPartido:ARGENTINA-VENEZUELA ronda=FINAL, ciudadEvento=ATLANTA, nombreEstadio=MERCEDES-BENZ, golesEquipo1=3, golesEquipo2=1]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=LOS ANGELES, ciudadDestino=NEW YORK, tiempoVuelo=330.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=LAS VEGAS, ciudadDestino=MIAMI, tiempoVuelo=270.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=CHICAGO, ciudadDestino=SAN FRANCISCO, tiempoVuelo=240.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=HOUSTON, ciudadDestino=SEATTLE, tiempoVuelo=240.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=DALLAS, ciudadDestino=BOSTON, tiempoVuelo=210.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=ATLANTA, ciudadDestino=LOS ANGELES, tiempoVuelo=270.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SAN FRANCISCO, ciudadDestino=NEW YORK, tiempoVuelo=300.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=ORLANDO, ciudadDestino=WASHINGTON, tiempoVuelo=120.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SEATTLE, ciudadDestino=LAS VEGAS, tiempoVuelo=150.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=PHILADELPHIA, ciudadDestino=MIAMI, tiempoVuelo=150.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=DETROIT, ciudadDestino=CHARLOTTE, tiempoVuelo=120.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=NEW YORK, ciudadDestino=PHILADELPHIA, tiempoVuelo=60.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=DENVER, ciudadDestino=SAN FRANCISCO, tiempoVuelo=150.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SAN DIEGO, ciudadDestino=HOUSTON, tiempoVuelo=180.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=CHARLOTTE, ciudadDestino=MIAMI, tiempoVuelo=90.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=MINNEAPOLIS, ciudadDestino=ATLANTA, tiempoVuelo=150.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=MIAMI, ciudadDestino=NEW YORK, tiempoVuelo=180.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SEATTLE, ciudadDestino=LOS ANGELES, tiempoVuelo=150.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=PHOENIX, ciudadDestino=DETROIT, tiempoVuelo=210.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=ATLANTA, ciudadDestino=PHILADELPHIA, tiempoVuelo=90.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=CHICAGO, ciudadDestino=LAS VEGAS, tiempoVuelo=210.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=HOUSTON, ciudadDestino=BOSTON, tiempoVuelo=180.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=CHARLOTTE, ciudadDestino=SEATTLE, tiempoVuelo=240.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=NEW YORK, ciudadDestino=CHICAGO, tiempoVuelo=120.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=MIAMI, ciudadDestino=DENVER, tiempoVuelo=240.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=LAS VEGAS, ciudadDestino=DETROIT, tiempoVuelo=210.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SAN FRANCISCO, ciudadDestino=ORLANDO, tiempoVuelo=270.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SEATTLE, ciudadDestino=DALLAS, tiempoVuelo=240.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=BOSTON, ciudadDestino=WASHINGTON D.C., tiempoVuelo=60.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=LOS ANGELES, ciudadDestino=PHOENIX, tiempoVuelo=60.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SAN DIEGO, ciudadDestino=CHARLOTTE, tiempoVuelo=240.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=DETROIT, ciudadDestino=MINNEAPOLIS, tiempoVuelo=90.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=HOUSTON, ciudadDestino=NEW YORK, tiempoVuelo=210.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=MINNEAPOLIS, ciudadDestino=DENVER, tiempoVuelo=150.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=CHICAGO, ciudadDestino=MIAMI, tiempoVuelo=180.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SAN DIEGO, ciudadDestino=BOSTON, tiempoVuelo=270.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=LAS VEGAS, ciudadDestino=SEATTLE, tiempoVuelo=150.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=PHILADELPHIA, ciudadDestino=ATLANTA, tiempoVuelo=120.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=DALLAS, ciudadDestino=SAN FRANCISCO, tiempoVuelo=240.0]
+[2024-08-02 19:05:49] [INFO] Ruta aérea cargada: RutaAerea [ciudadOrigen=SAN FRANCISCO, ciudadDestino=DENVER, tiempoVuelo=150.0]
