@@ -43,10 +43,10 @@ public class EquipoMenu {
 
     private static void altaEquipo(AVL equipos) {
         System.out.print("Ingrese el nombre del pais del equipo: ");
-        String nombrePais = scanner.nextLine();
+        String nombrePais = scanner.nextLine().trim();
         nombrePais=nombrePais.toUpperCase();
         System.out.print("Ingrese el nombre del director tecnico: ");
-        String directorTecnico = scanner.nextLine();
+        String directorTecnico = scanner.nextLine().trim();
         directorTecnico=directorTecnico.toUpperCase();
         System.out.print("Ingrese el grupo (un solo caracter): ");
         char grupo = scanner.nextLine().toUpperCase().charAt(0);
@@ -55,11 +55,13 @@ public class EquipoMenu {
         	
         	 LecturaEscritura.escribirEquipo(equipo);
              System.out.println("Equipo " + nombrePais + " agregado exitosamente.");
+            
         }else {
         	  System.out.println("Equipo " + nombrePais + " Error ya se encuentra cargado.");
         	
         	
         }
+      
        
     }
 
@@ -87,8 +89,8 @@ public class EquipoMenu {
          equipo = (Equipo) equipos.obtenerElemento(equipo);
         if (equipo != null) {
             System.out.print("Ingrese el nuevo nombre del director tecnico: ");
-            String nuevoDirectorTecnico = scanner.nextLine();
-            equipo.setDirectorTecnico(nuevoDirectorTecnico);
+            String nuevoDirectorTecnico = scanner.nextLine().trim();
+            equipo.setDirectorTecnico(nuevoDirectorTecnico.toUpperCase());
             LecturaEscritura.eliminarEquipo(nombrePais);
             LecturaEscritura.escribirEquipo(equipo);
             

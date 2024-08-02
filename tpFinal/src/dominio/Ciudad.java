@@ -16,8 +16,11 @@ public class Ciudad {
 	}
 	public Ciudad(String nombre) {
 		this.nombre = nombre;
-	
+		this.alojamientoDisponible = false;
+		this.esSede =false;
 	}
+	
+	
 	public String getNombre() {
 		return nombre;
 	}

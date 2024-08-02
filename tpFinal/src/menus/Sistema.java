@@ -273,8 +273,8 @@ public class Sistema {
 			
 			while(i<=longitud) {
 				Equipo equipo=(Equipo) aux.recuperar(i);
-				//Uso un constructor con esos datos , ya que son los unicos relevantes en este caso ya que sera algo temporal
 				
+				//Uso un constructor con esos datos , ya que son los unicos relevantes en este caso ya que sera algo temporal
 				EquipoGoles equipoG=new EquipoGoles(equipo.getNombrePais(),equipo.getGolesAFavor());
 				ordenaE.insertar(equipoG);
 				

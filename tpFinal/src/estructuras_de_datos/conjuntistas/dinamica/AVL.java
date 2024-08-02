@@ -13,50 +13,52 @@ public class AVL {
 
 
 	public boolean insertar(Comparable elemento) {
-		boolean insercion = false;
+		boolean [] auxInsercion = {false};
 		if (raiz == null) {
 			raiz = new NodoAvl(elemento, null, null);
-			insercion = true;
+		
 		} else {
-			NodoAvl nuevaRaiz = insertarAux(this.raiz, elemento);
+			NodoAvl nuevaRaiz = insertarAux(this.raiz, elemento,auxInsercion);
 			if (nuevaRaiz != null) {
 				this.raiz = nuevaRaiz;
-				insercion = true;
+			
 			}
 		}
-		return insercion;
+		return auxInsercion[0];
 	}
 
-	private NodoAvl insertarAux(NodoAvl nodo, Comparable elemento) {
+	private NodoAvl insertarAux(NodoAvl nodo, Comparable elemento,boolean []auxInsercion ) {
 		NodoAvl resultado = null;
 		int comparacion = elemento.compareTo(nodo.getElemento());
 
 		if (comparacion != 0) { // Busco en las sub-ramas para insertar
 			if (comparacion < 0) {
 				if (nodo.getHijoIzq() != null) {
-					resultado = insertarAux(nodo.getHijoIzq(), elemento);
+					resultado = insertarAux(nodo.getHijoIzq(), elemento,auxInsercion);
 					if (nodo.getHijoIzq() != resultado) {
 						nodo.setHijoIzq(resultado);
 						resultado = nodo;
 					}
 				} else {
 					nodo.setHijoIzq(new NodoAvl(elemento, null, null));
+					auxInsercion[0]=true;
 				}
 			} else {
 				if (nodo.getHijoDer() != null) {
-					resultado = insertarAux(nodo.getHijoDer(), elemento);
+					resultado = insertarAux(nodo.getHijoDer(), elemento,auxInsercion);
 					if (nodo.getHijoDer() != resultado) {
 						nodo.setHijoDer(resultado);
 						resultado = nodo;
 					}
 				} else {
 					nodo.setHijoDer(new NodoAvl(elemento, null, null));
+					auxInsercion[0]=true;
 				}
 			}
 			nodo.recalcularAltura();
 			resultado = balancear(nodo);
 		} else {
-			// Element already exists, do not insert
+			
 			resultado = nodo;
 		}
 		return resultado;
