@@ -1,6 +1,7 @@
 package lectura_escritura;
 
 import estructuras_de_datos.conjuntistas.dinamica.*;
+
 import estructuras_de_datos.grafos.*;
 import estructuras_de_datos.tdaE.*;
 import logs.Log;
@@ -11,7 +12,7 @@ import java.util.StringTokenizer;
 import dominio.Ciudad;
 import dominio.Equipo;
 import dominio.ResultadoPartido;
-import dominio.RutaAerea;
+
 
 public class LecturaEscritura {
 
@@ -143,8 +144,8 @@ public class LecturaEscritura {
 
                         Ciudad auxO = new Ciudad(ciudadOrigen);
                         Ciudad auxD = new Ciudad(ciudadDestino);
-                        RutaAerea rutaAerea = new RutaAerea(ciudadOrigen, ciudadDestino, tiempoVuelo);
-                        log.info("Ruta aérea cargada: " + rutaAerea.toString());
+                        
+                        log.info("Ruta aérea cargada: Origen: " + ciudadOrigen + ", Destino: " + ciudadDestino + ", Tiempo de vuelo: " + tiempoVuelo);
 
                         mapa.insertarArco(auxO, auxD, tiempoVuelo);
                     }
@@ -155,15 +156,20 @@ public class LecturaEscritura {
         }
     }
 
+
     public static void escribirCiudad(Ciudad ciudad) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(ciudades_path, true))) {
-            bw.write("C: " + ciudad.getNombre() + ";" + ciudad.getAlojamientoDisponible() + ";" + ciudad.getEsSede());
+            String alojamientoDisponible = ciudad.getAlojamientoDisponible() ? "TRUE" : "FALSE";
+            String esSede = ciudad.getEsSede() ? "TRUE" : "FALSE";
+            
+            bw.write("C: " + ciudad.getNombre() + ";" + alojamientoDisponible + ";" + esSede);
             bw.newLine();
             log.info("Ciudad escrita: " + ciudad.toString());
         } catch (IOException e) {
             log.error("Error al escribir ciudad", e);
         }
     }
+
 
     public static void escribirEquipo(Equipo equipo) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(equipos_path, true))) {
@@ -187,15 +193,7 @@ public class LecturaEscritura {
         }
     }
 
-    public static void escribirRutaAerea(RutaAerea rutaAerea) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(rutas_path, true))) {
-            bw.write("R: " + rutaAerea.getCiudadOrigen() + ";" + rutaAerea.getCiudadDestino() + ";" + rutaAerea.getTiempoVuelo());
-            bw.newLine();
-            log.info("Ruta aérea escrita: " + rutaAerea.toString());
-        } catch (IOException e) {
-            log.error("Error al escribir ruta aérea", e);
-        }
-    }
+
 
     // Métodos para eliminar
     public static void eliminarCiudad(String nombreCiudad) {

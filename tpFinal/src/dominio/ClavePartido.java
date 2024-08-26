@@ -38,19 +38,14 @@ public class ClavePartido {
 
     @Override
     public int hashCode() {
-        // Convertimos a minúsculas para asegurar consistencia con equals
+      
         return Objects.hash(equipo1 != null ? equipo1.toLowerCase() : null, 
                             equipo2 != null ? equipo2.toLowerCase() : null);
     }
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
+   
         ClavePartido other = (ClavePartido) obj;
         return equipo1 != null && equipo1.equalsIgnoreCase(other.equipo1)
             && equipo2 != null && equipo2.equalsIgnoreCase(other.equipo2);

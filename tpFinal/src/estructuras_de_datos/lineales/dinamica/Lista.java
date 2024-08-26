@@ -96,7 +96,7 @@ public class Lista {
 			while((i<=longitud())&&pos==-1) {
 
 
-				if(aux.getElemen()==unElemento) {
+				if(aux.getElemen().equals(unElemento)) {
 					pos=i;
 
 				}else {

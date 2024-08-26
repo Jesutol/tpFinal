@@ -20,8 +20,7 @@ public class EquipoMenu {
             System.out.println("4. Volver al menu anterior");
             System.out.print("Seleccione una opcion: ");
             int opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
-
+            scanner.nextLine(); 
             switch (opcion) {
                 case 1:
                     altaEquipo(equipos);

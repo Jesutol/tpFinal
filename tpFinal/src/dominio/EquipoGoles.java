@@ -1,6 +1,6 @@
 package dominio;
 
-public class EquipoGoles implements Comparable<EquipoGoles> {
+public class EquipoGoles implements Comparable {
     private String nombrePais;
     private String directorTecnico;
     private char grupo;
@@ -84,13 +84,13 @@ public class EquipoGoles implements Comparable<EquipoGoles> {
 
 
     @Override
-    public int compareTo(EquipoGoles otroEquipo) {
-        int comparacionGoles = Integer.compare(this.golesAFavor, otroEquipo.getGolesAFavor());
-        if (comparacionGoles != 0) {
-            return comparacionGoles;
-        } else {
-            return this.nombrePais.compareTo(otroEquipo.getNombrePais());
+    public int compareTo(Object otroEquipo) {
+        EquipoGoles equipo = (EquipoGoles) otroEquipo;
+        int comparacionGoles = Integer.compare(this.golesAFavor, equipo.getGolesAFavor());
+        if (comparacionGoles == 0) {
+            comparacionGoles = this.nombrePais.compareTo(equipo.getNombrePais());
         }
+        return comparacionGoles;
     }
 
     @Override

@@ -13,11 +13,18 @@ public class MultiValueHashMap<K, V> {
     }
 
     // Insertar un valor en la lista asociada a una clave
-    public void put(K key, V value) {
+    public boolean put(K key, V value) {
+    	boolean exito=false;
         if (!map.containsKey(key)) {
             map.put(key, new Lista());
         }
-        map.get(key).insertar(value, map.get(key).longitud() + 1);
+
+        Lista lista = map.get(key);
+        if (lista.localizar(value) == -1) { // Verifica si el valor ya existe en la lista EN  caso de existir no se insertara
+            lista.insertar(value, 1);
+            exito=true;
+        }
+        return exito;
     }
 
     // Obtener la lista de valores asociados a una clave
@@ -27,6 +34,7 @@ public class MultiValueHashMap<K, V> {
 
     // Eliminar un valor especifico de la lista asociada a una clave
     public boolean remove(K key, V value) {
+    	boolean exito=false;
         if (map.containsKey(key)) {
             Lista values = map.get(key);
             int pos = values.localizar(value);
@@ -35,10 +43,10 @@ public class MultiValueHashMap<K, V> {
                 if (values.esVacia()) {
                     map.remove(key);
                 }
-                return true;
+                exito=true;
             }
         }
-        return false;
+        return exito;
     }
 
     // Eliminar todos los valores asociados a una clave

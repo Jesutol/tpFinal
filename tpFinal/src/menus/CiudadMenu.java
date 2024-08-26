@@ -51,7 +51,7 @@ public class CiudadMenu {
             alojamientoDisponible = scanner.nextBoolean();
         } catch (InputMismatchException e) {
             System.out.println("Entrada no valida. Por favor, ingrese 'true' o 'false'.");
-            return; // Salir del método en caso de entrada inválida
+          
         }
 
         boolean esSede = false;
@@ -60,7 +60,7 @@ public class CiudadMenu {
             esSede = scanner.nextBoolean();
         } catch (InputMismatchException e) {
             System.out.println("Entrada no valida. Por favor, ingrese 'true' o 'false'.");
-            return; // Salir del método en caso de entrada inválida
+         
         }
 
         Ciudad ciudad = new Ciudad(nombre, alojamientoDisponible, esSede);
@@ -101,13 +101,13 @@ public class CiudadMenu {
                 
                 try {
                     int opcion = scanner.nextInt();
-                    scanner.nextLine(); // Limpia el buffer
+                    scanner.nextLine();
 
                     switch (opcion) {
                         case 1:
                             System.out.print("Nuevo estado de alojamiento disponible (true/false): ");
                             boolean nuevoAlojamientoDisponible = scanner.nextBoolean();
-                            scanner.nextLine(); // Limpia el buffer
+                            scanner.nextLine(); 
                             ciudad.setAlojamientoDisponible(nuevoAlojamientoDisponible);
                             LecturaEscritura.eliminarCiudad(nombre);
                             LecturaEscritura.escribirCiudad(ciudad);
@@ -117,7 +117,7 @@ public class CiudadMenu {
                         case 2:
                             System.out.print("Nuevo estado de sede (true/false): ");
                             boolean nuevoEsSede = scanner.nextBoolean();
-                            scanner.nextLine(); // Limpia el buffer
+                            scanner.nextLine(); 
                             ciudad.setEsSede(nuevoEsSede);
                             LecturaEscritura.eliminarCiudad(nombre);
                             LecturaEscritura.escribirCiudad(ciudad);
@@ -133,7 +133,7 @@ public class CiudadMenu {
                     }
                 } catch (InputMismatchException e) {
                     System.out.println("Entrada no válida. Por favor, ingrese un número para la opción y 'true' o 'false' según corresponda.");
-                    scanner.nextLine(); // Limpia el buffer de entrada
+                    scanner.nextLine();
                 }
             }
         } else {

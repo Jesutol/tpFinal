@@ -44,21 +44,11 @@ public class Ciudad {
 	public int hashCode() {
 		return Objects.hash(nombre);
 	}
+	
 	@Override
     public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Ciudad other = (Ciudad) obj;
-        if (nombre == null) {
-            if (other.nombre != null)
-                return false;
-        } else if (!nombre.equalsIgnoreCase(other.nombre))
-            return false;
-        return true;
+		Ciudad ciudad = (Ciudad) obj;
+        return this.nombre.equals(ciudad.getNombre());
     }
 	@Override
 	public String toString() {

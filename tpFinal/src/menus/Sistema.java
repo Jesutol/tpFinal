@@ -194,6 +194,7 @@ public class Sistema {
 		
 		
 	}
+	
 	public static void mostrarEquiposA() {
 		
 		System.out.println("Ingrese el minimo (orden alfabetico)");
@@ -202,7 +203,7 @@ public class Sistema {
 		String  max =scanner.nextLine().trim();
 		Equipo auxE1=new Equipo(min.toUpperCase());
 		Equipo auxE2=new Equipo(max.toUpperCase());
-	
+		// recorda que v es menor que venezuela por lo que si es el maximo no estara
 		 System.out.println(equipos.listarRango(auxE1, auxE2).toString());
 		
 	
@@ -223,16 +224,16 @@ public class Sistema {
 	}
 
 	public static void caminoMenorTiempo() {
-	    // Crear un objeto Scanner para leer la entrada del usuario
+	   
 
 
 	    // Leer el nombre del equipo 1
 	    System.out.println("Ingresar ciudad origen:");
-	    String ciudadO = scanner.nextLine().trim(); // Lee y limpia el buffer
+	    String ciudadO = scanner.nextLine().trim(); 
 
 	    // Leer el nombre del equipo 2
 	    System.out.println("Ingresar ciudad Destino:");
-	    String ciudadD = scanner.nextLine().trim(); // Lee y limpia el buffer
+	    String ciudadD = scanner.nextLine().trim(); 
 
 	    // Crear objetos Ciudad con los nombres ingresados
 	    Ciudad auxO = new Ciudad(ciudadO.toUpperCase());

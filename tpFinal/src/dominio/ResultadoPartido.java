@@ -92,14 +92,14 @@ public class ResultadoPartido {
 
 		@Override
 		public boolean equals(Object obj) {
-			if (this == obj)
-				return true;
-			if (obj == null)
-				return false;
-			if (getClass() != obj.getClass())
-				return false;
-			ResultadoPartido other = (ResultadoPartido) obj;
-			return Objects.equals(ronda, other.ronda);
+		  
+		    ResultadoPartido otro = (ResultadoPartido) obj;
+		    return golesEquipo1 == otro.golesEquipo1 &&
+		           golesEquipo2 == otro.golesEquipo2 &&
+		           Objects.equals(clave, otro.clave) &&
+		           Objects.equals(ronda, otro.ronda) &&
+		           Objects.equals(ciudadEvento, otro.ciudadEvento) &&
+		           Objects.equals(nombreEstadio, otro.nombreEstadio);
 		}
 		
 	    

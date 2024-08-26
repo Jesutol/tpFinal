@@ -99,17 +99,13 @@ public class Equipo implements Comparable {
 		
 		return golesAFavor-golesEnContra;
 	}
-	@Override
-
-	public int compareTo(Object unEquipo) {
-		if (unEquipo instanceof Equipo) {
-			Equipo equipo = (Equipo) unEquipo;
-			return this.nombrePais.compareTo(equipo.getNombrePais());
-		} else {
-			// Manejo de la situación en la que el objeto no es de tipo Equipo
-			throw new IllegalArgumentException("El objeto proporcionado no es una instancia de la clase Equipo.");
-		}
+	
+	
+	public int compareTo(Object otroObjeto) {
+	    Equipo unEquipo = (Equipo) otroObjeto;
+	    return this.nombrePais.compareTo(unEquipo.getNombrePais());
 	}
+
 
 
 

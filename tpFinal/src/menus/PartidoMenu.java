@@ -45,20 +45,23 @@ public class PartidoMenu {
 
 		Equipo auxE1=new Equipo(equipo1);
 		Equipo auxE2=new Equipo(equipo2);
-		 auxE1 = (Equipo) equipos.obtenerElemento(auxE1);
-		 auxE2 = (Equipo) equipos.obtenerElemento(auxE2);
+		auxE1 = (Equipo) equipos.obtenerElemento(auxE1);
+		auxE2 = (Equipo) equipos.obtenerElemento(auxE2);
 
 		if (auxE1 != null && auxE2 != null) {
 			System.out.print("Ingrese la ciudad del evento: ");
 			String ciudadEvento = scanner.nextLine().toUpperCase().trim();
 			Ciudad ciudadA=new Ciudad(ciudadEvento);
-			 ciudadA = (Ciudad) mapa.obtenerElemento(ciudadA);
+			ciudadA = (Ciudad) mapa.obtenerElemento(ciudadA);
 
 			if (ciudadA != null && ciudadA.getEsSede()) {
+				System.out.println("Si los equipos ya jugaron la mimsa ronda agregar. ejemplo: GRUPO(1)");
 				System.out.print("Ingrese la ronda: ");
 				String ronda = scanner.nextLine().trim();
+				ronda=ronda.toUpperCase();
 				System.out.print("Ingrese el nombre del estadio: ");
 				String nombreEstadio = scanner.nextLine().trim();
+				nombreEstadio=nombreEstadio.toUpperCase();
 
 				int golesEquipo1 = 0;
 				int golesEquipo2 = 0;
@@ -68,36 +71,41 @@ public class PartidoMenu {
 					golesEquipo1 = scanner.nextInt();
 					System.out.print("Ingrese los goles del equipo 2: ");
 					golesEquipo2 = scanner.nextInt();
-					scanner.nextLine(); // Limpiar el buffer después de leer enteros
+					scanner.nextLine(); 
 
 					ResultadoPartido resultado = new ResultadoPartido(
 							equipo1, equipo2, ronda, ciudadEvento, nombreEstadio, golesEquipo1, golesEquipo2
 							);
 
-					partidos.put(resultado.getClave(), resultado);
+					if(partidos.put(resultado.getClave(), resultado)) {
+						// Asignar goles
+						auxE1.setGolesAFavor(golesEquipo1);
+						auxE1.setGolesEnContra(golesEquipo2);
+						auxE2.setGolesAFavor(golesEquipo2);
+						auxE2.setGolesEnContra(golesEquipo1);
 
-					// Asignar goles
-					auxE1.setGolesAFavor(golesEquipo1);
-					auxE1.setGolesEnContra(golesEquipo2);
-					auxE2.setGolesAFavor(golesEquipo2);
-					auxE2.setGolesEnContra(golesEquipo1);
+						// Asignar puntos
+						if (golesEquipo1 > golesEquipo2) {
+							auxE1.setPuntosGanados(3);
+						} else if (golesEquipo1 < golesEquipo2) {
+							auxE2.setPuntosGanados(3);
+						} else {
+							auxE1.setPuntosGanados(1);
+							auxE2.setPuntosGanados(1);
+						}
 
-					// Asignar puntos
-					if (golesEquipo1 > golesEquipo2) {
-						auxE1.setPuntosGanados(3);
-					} else if (golesEquipo1 < golesEquipo2) {
-						auxE2.setPuntosGanados(3);
-					} else {
-						auxE1.setPuntosGanados(1);
-						auxE2.setPuntosGanados(1);
+						System.out.println("Partido registrado exitosamente.");
+						LecturaEscritura.escribirResultadoPartido(resultado);
+
+
+
+					}else {
+						System.out.println("El partido ya existe");
 					}
-
-					System.out.println("Partido registrado exitosamente.");
-					LecturaEscritura.escribirResultadoPartido(resultado);
 
 				} catch (InputMismatchException e) {
 					System.out.println("Error: Entrada inválida para los goles. Deben ser números enteros.");
-					scanner.nextLine(); // Limpiar el buffer en caso de error
+					scanner.nextLine(); 
 				}
 			} else {
 				System.out.println("Error: La ciudad " + ciudadEvento + " no es sede o no existe.");
